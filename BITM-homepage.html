@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header class="bg-light py-2 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="mb-1" style="font-size: .875rem; line-height: 1.25rem">
+                        <i class="fa-solid fa-phone text-brandGreen-500" style="color: #32CD32;"></i>+88 09638-016499 (10:00 am - 06.00 pm) <i class="fa-solid fa-envelope text-brandGreen-500" style="color: #32CD32;"></i> info@bitm.org.bd
+                    </p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <p class="mb-1" style="font-size: .875rem; line-height: 1.25rem"><i class="fa-solid fa-user text-brandGreen-500" style="color: #32CD32;"></i> Login <i class="fa-solid fa-user-plus text-brandGreen-500" style="color: #32CD32"></i> Register</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg px-5 py-0" style="background-color: #005A9C; min-height:78px">
+        <div class="container">
+            <a href="" class="navbar-brand mx-lg-5 mx-2 py-0">
+                <img src="img/bmtilogo.png" alt="logo" class="img-fluid" style="height: 78px"/>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar navbar-nav mx-auto">
+                    <li><a href="" class="nav-link text-white">Home</a></li>
+                    <li><a href="" class="nav-link text-white">Our Courses</a></li>
+                    <li><a href="" class="nav-link text-white">PGD</a></li>
+                    <li><a href="" class="nav-link text-white">RPL</a></li>
+                    <li><a href="" class="nav-link text-white">About Us</a></li>
+                </ul>
+            </div>
+            <a href="" class="navbar-brand d-none d-lg-block mx-lg-5 mx-2">
+                <img src="img/basis_logo_white.png" alt="" class="img-fluid" style="height: 45px"/>
+            </a>
+        </div>
+    </nav>
+
+    <section class="py-0">
+        <div class="position-relative">
+            <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500" data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active position-relative h-100">
+                        <img src="img/Banner%201.jpg" alt="" class="h-100 w-100"/>
+                        <div class="carousel-gradient-overlay"></div>
+                    </div>
+                    <div class="carousel-item position-relative h-100">
+                        <img src="img/Banner%202.jpg" alt="" class="h-100 w-100"/>
+                        <div class="carousel-gradient-overlay"></div>
+                    </div>
+                    <div class="carousel-item position-relative h-100">
+                        <img src="img/op1(1).jpg" alt="" class="h-100 w-100"/>
+                        <div class="carousel-gradient-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute top-50 start-0 ms-5 text-start translate-middle-y text-white w-md-75 w-lg-50 w-xl-25 px-3">
+                <h1> Find your Courses</h1>
+                <div class="container-fluid px-0">
+                    <form role="search" class="w-100">
+                        <div class="d-flex flex-column flex-sm-row gap-2">
+                            <input type="search" class="form-control rounded-pill me-2" placeholder="Search" />
+                            <button class="btn btn-success rounded-pill px-4" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light px-0 px-lg-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card px-3 bg-light-subtle">
+                        <div class="card-body">
+                            <h5 class="fs-6 fs-md-5" style="color: #32CD32;">COURSES FROM ALL THE FIELDS <span class="mx-2 fs-3">&mdash;</span></h5>
+                            <h2 class="fs-3 fs-md-1">Find all of Our <span style="color: #32CD32;">Courses</span></h2>
+
+                            <div class="d-flex justify-content-end align-items-center gap-3 py-3">
+                                <label class="custom-radio">
+                                    <input type="radio" name="filter" value="all" checked>
+                                    <span class="radio-label">All</span>
+                                </label>
+
+                                <label class="custom-radio">
+                                    <input type="radio" name="filter" value="online">
+                                    <span class="radio-label">Online</span>
+                                </label>
+
+                                <label class="custom-radio">
+                                    <input type="radio" name="filter" value="offline">
+                                    <span class="radio-label">Offline</span>
+                                </label>
+                            </div>
+
+
+                            <div class="card-carousel pb-0 pt-3">
+                                <div class="carousel slide" id="card-carousel" data-bs-ride="carousel">
+                                    <button class="carousel-control-prev cs-prev-icon" type="button" data-bs-target="#card-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next cs-next-icon" type="button" data-bs-target="#card-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-3 ty">
+                                                    <div class="card h-100 d-flex flex-column type-course-border">
+                                                        <div class="card-body card-body-centered">
+                                                            <a href="" style="text-decoration: none; color: black;"><h6>All courses</h6></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="card h-100 d-flex flex-column type-course-border">
+                                                        <div class="card-body card-body-centered">
+                                                            <a href="" style="text-decoration: none; color: black;"><h6>Graphics & Multimedia</h6></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="card h-100 d-flex flex-column type-course-border">
+                                                        <div class="card-body card-body-centered">
+                                                            <a href="" style="text-decoration: none; color: black;"><h6>Web & Software Development</h6></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="card h-100 d-flex flex-column type-course-border">
+                                                        <div class="card-body card-body-centered">
+                                                            <a href="" style="text-decoration: none; color: black;"><h6>3D Animation and Visualization</h6></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="card h-100 d-flex flex-column type-course-border">
+                                                        <div class="card-body card-body-centered">
+                                                            <a href="" style="text-decoration: none; color: black;"><h6>Data Science & Analytics</h6></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="card h-100 d-flex flex-column type-course-border">
+                                                        <div class="card-body card-body-centered">
+                                                            <a href="" style="text-decoration: none; color: black;"><h6>Robotics & Automation</h6></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="card h-100 d-flex flex-column type-course-border">
+                                                        <div class="card-body card-body-centered">
+                                                            <a href="" style="text-decoration: none; color: black;"><h6>Web & Software Development</h6></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="card h-100 d-flex flex-column type-course-border">
+                                                        <div class="card-body card-body-centered">
+                                                            <a href="" style="text-decoration: none; color: black;"><h6>Personal Development</h6></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="py-0">
+                                <div class="row py-5">
+                                    <div class="col-6 col-md-4 col-lg-3 mb-3 px-1 px-md-2">
+                                        <div class="card rounded-3 card-hover h-100 d-flex flex-column">
+                                            <img src="img/bitm01.jpg" alt="" class="rounded-top w-100"/>
+                                            <div class="card-body d-flex flex-column card-body-height">
+                                                <h4 class="mb-2 fs-6"><b>Certified Course on Master of Graphic Design (2nd Batch)</b></h4>
+                                                <div class="mt-auto">
+                                                    <p class="mb-0"><i class="bi bi-calendar text-primary"></i> Class Starts: 23 Jul, 2025</p>
+                                                    <p class="mb-0"><i class="bi bi-clock"></i> Deadline: 23 Jul, 2025</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer mt-auto">
+                                                <div class="row align-items-center">
+                                                    <div class="col-12 col-sm-6 mb-sm-0">
+                                                        <h5>TK. 25,000</h5>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 text-sm-end">
+                                                        <a href="" class="btn text-white w-100 me-sm-auto" style="background-color: blue;">Enrol Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 mb-3 px-1 px-md-2">
+                                        <div class="card rounded-3 card-hover h-100 d-flex flex-column">
+                                            <img src="img/bitm01.jpg" alt="" class="rounded-top w-100"/>
+                                            <div class="card-body d-flex flex-column card-body-height">
+                                                <h4 class="mb-2 fs-6"><b>Certified Course on Master of Graphic Design (2nd Batch)</b></h4>
+                                                <div class="mt-auto">
+                                                    <p class="mb-0"><i class="bi bi-calendar text-primary"></i> Class Starts: 23 Jul, 2025</p>
+                                                    <p class="mb-0"><i class="bi bi-clock"></i> Deadline: 23 Jul, 2025</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer mt-auto">
+                                                <div class="row align-items-center">
+                                                    <div class="col-12 col-sm-6 mb-sm-0">
+                                                        <h5>TK. 25,000</h5>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 text-sm-end">
+                                                        <a href="" class="btn text-white w-100 me-sm-auto" style="background-color: blue;">Enrol Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 mb-3 px-1 px-md-2">
+                                        <div class="card rounded-3 card-hover h-100 d-flex flex-column">
+                                            <img src="img/bitm01.jpg" alt="" class="rounded-top w-100"/>
+                                            <div class="card-body d-flex flex-column card-body-height">
+                                                <h4 class="mb-2 fs-6"><b>Certified Course on Master of Graphic Design (2nd Batch)</b></h4>
+                                                <div class="mt-auto">
+                                                    <p class="mb-0"><i class="bi bi-calendar text-primary"></i> Class Starts: 23 Jul, 2025</p>
+                                                    <p class="mb-0"><i class="bi bi-clock"></i> Deadline: 23 Jul, 2025</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer mt-auto">
+                                                <div class="row align-items-center">
+                                                    <div class="col-12 col-sm-6 mb-sm-0">
+                                                        <h5>TK. 25,000</h5>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 text-sm-end">
+                                                        <a href="" class="btn text-white w-100 me-sm-auto" style="background-color: blue;">Enrol Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 mb-3 px-1 px-md-2">
+                                        <div class="card rounded-3 card-hover h-100 d-flex flex-column">
+                                            <img src="img/bitm01.jpg" alt="" class="rounded-top w-100"/>
+                                            <div class="card-body d-flex flex-column card-body-height">
+                                                <h4 class="mb-2 fs-6"><b>Certified Course on Master of Graphic Design (2nd Batch)</b></h4>
+                                                <div class="mt-auto">
+                                                    <p class="mb-0"><i class="bi bi-calendar text-primary"></i> Class Starts: 23 Jul, 2025</p>
+                                                    <p class="mb-0"><i class="bi bi-clock"></i> Deadline: 23 Jul, 2025</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer mt-auto">
+                                                <div class="row align-items-center">
+                                                    <div class="col-12 col-sm-6 mb-sm-0">
+                                                        <h5>TK. 25,000</h5>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 text-sm-end">
+                                                        <a href="" class="btn text-white w-100 me-sm-auto" style="background-color: blue;">Enrol Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 mb-3 px-1 px-md-2">
+                                        <div class="card rounded-3 card-hover h-100 d-flex flex-column">
+                                            <img src="img/bitm01.jpg" alt="" class="rounded-top w-100"/>
+                                            <div class="card-body d-flex flex-column card-body-height">
+                                                <h4 class="mb-2 fs-6"><b>Certified Course on Master of Graphic Design (2nd Batch)</b></h4>
+                                                <div class="mt-auto">
+                                                    <p class="mb-0"><i class="bi bi-calendar text-primary"></i> Class Starts: 23 Jul, 2025</p>
+                                                    <p class="mb-0"><i class="bi bi-clock"></i> Deadline: 23 Jul, 2025</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer mt-auto">
+                                                <div class="row align-items-center">
+                                                    <div class="col-12 col-sm-6 mb-sm-0">
+                                                        <h5>TK. 25,000</h5>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 text-sm-end">
+                                                        <a href="" class="btn text-white w-100 me-sm-auto" style="background-color: blue;">Enrol Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 mb-3 px-1 px-md-2">
+                                        <div class="card rounded-3 card-hover h-100 d-flex flex-column">
+                                            <img src="img/bitm01.jpg" alt="" class="rounded-top w-100"/>
+                                            <div class="card-body d-flex flex-column card-body-height">
+                                                <h4 class="mb-2 fs-6"><b>Certified Course on Master of Graphic Design (2nd Batch)</b></h4>
+                                                <div class="mt-auto">
+                                                    <p class="mb-0"><i class="bi bi-calendar text-primary"></i> Class Starts: 23 Jul, 2025</p>
+                                                    <p class="mb-0"><i class="bi bi-clock"></i> Deadline: 23 Jul, 2025</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer mt-auto">
+                                                <div class="row align-items-center">
+                                                    <div class="col-12 col-sm-6 mb-sm-0">
+                                                        <h5>TK. 25,000</h5>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 text-sm-end">
+                                                        <a href="" class="btn text-white w-100 me-sm-auto" style="background-color: blue;">Enrol Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 mb-3 px-1 px-md-2">
+                                        <div class="card rounded-3 card-hover h-100 d-flex flex-column">
+                                            <img src="img/bitm01.jpg" alt="" class="rounded-top w-100"/>
+                                            <div class="card-body d-flex flex-column card-body-height">
+                                                <h4 class="mb-2 fs-6"><b>Certified Course on Master of Graphic Design (2nd Batch)</b></h4>
+                                                <div class="mt-auto">
+                                                    <p class="mb-0"><i class="bi bi-calendar text-primary"></i> Class Starts: 23 Jul, 2025</p>
+                                                    <p class="mb-0"><i class="bi bi-clock"></i> Deadline: 23 Jul, 2025</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer mt-auto">
+                                                <div class="row align-items-center">
+                                                    <div class="col-12 col-sm-6 mb-sm-0">
+                                                        <h5>TK. 25,000</h5>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 text-sm-end">
+                                                        <a href="" class="btn text-white w-100 me-sm-auto" style="background-color: blue;">Enrol Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mx-2 mx-lg-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="pt-5 pb-0">
+                        <h5 class="fs-6 fs-md-5 ps-4 ms-2 ms-lg-5" style="color: #32CD32;">KNOW MORE ABOUT BITM <span class="mx-2 fs-3">&mdash;</span></h5>
+                        <h2 class="fs-3 fs-md-1 ps-4 ms-2 ms-lg-5">About <span style="color: #32CD32;">BITM</span></h2>
+                    </div>
+                    <div class="row d-flex align-items-stretch py-0 ms-5" >
+                        <div class="col-12 col-md-6 px-2 px-lg-4 py-3 py-lg-5" style="height: 58vh">
+                            <img src="img/btimlowcard.jpg" alt="" class="w-100 h-100 object-fit-cover rounded-2"/>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex flex-column py-3 py-lg-5" style="">
+                            <p class="text-start justified-text mb-2">To address the skill gap of HR in the industry, BASIS started its own training activities in 2007. Later in 2012, BASIS institutionalized its training activities and set up BASIS Institute of Technology & Management Limited (BITM) with the support of World Bank. BITM was established with a vision to be a world-class IT institute in Bangladesh for the purpose of enhancing the competitiveness of the IT Sector in Bangladesh by creating a pool of qualified IT professionals and quality certified IT companies. To become a Center of Excellence in Information Technology and Knowledge Management for a more proactive and responsive extension service through innovation, dedicated research and development teams and management expertise tied with a strong technology focus. Our mission is to meet the needs of IT Industry through effective learning, teaching and development of skills. Currently BITM has a capacity to train over 5,000 professionals (both entry level & management level).</p>
+                            <a href="" type="button" class="btn btn-success align-self-center w-auto" style="color: white; background-color: limegreen">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-5">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card py-3 card-hover">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="stat-icon mb-2 bi bi-mortarboard-fill"></div>
+                            </div>
+                            <div class="col-8">
+                                <div class="stat-number">60,000+</div>
+                                <div class="stat-label">Graduated Students</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card py-3 card-hover">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="stat-icon mb-2 bi bi-people-fill"></div>
+                            </div>
+                            <div class="col-8">
+                                <div class="stat-number">1,015+</div>
+                                <div class="stat-label">Completed Batches</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card py-3 card-hover">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="stat-icon mb-2 bi bi-bank2"></div>
+                            </div>
+                            <div class="col-8">
+                                <div class="stat-number">23+</div>
+                                <div class="stat-label">Collaborative Partners</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card py-3 card-hover">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="stat-icon mb-2 bi bi-mortarboard-fill"></div>
+                            </div>
+                            <div class="col-8">
+                                <div class="stat-number">19+</div>
+                                <div class="stat-label">Ongoing Batches</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5 class="fs-6 fs-md-5" style="color: #32CD32;">HONORABLE COLLABORATORS <span class="mx-2 fs-3">&mdash;</span></h5>
+                    <h2 class="fs-3 fs-md-1">Our <span style="color: #32CD32;">Partners</span></h2>
+
+                    <div class="card-carousel pb-0 pt-3">
+                        <div class="carousel slide" id="partner-carousel" data-bs-ride="carousel">
+                            <button class="carousel-control-prev cs-prev-icon" type="button" data-bs-target="#partner-carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next cs-next-icon" type="button" data-bs-target="#partner-carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-4 col-md-3">
+                                            <div class="card type-course-border">
+                                                <div class="card-body partner-card">
+                                                    <a href="#"><img src="img/partner1.jpg" class="partner-img" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3">
+                                            <div class="card type-course-border">
+                                                <div class="card-body partner-card">
+                                                    <a href="#"><img src="img/partner2.jpg" class="partner-img" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3">
+                                            <div class="card type-course-border">
+                                                <div class="card-body partner-card">
+                                                    <a href="#"><img src="img/partner3.png" class="partner-img" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3">
+                                            <div class="card type-course-border">
+                                                <div class="card-body partner-card">
+                                                    <a href="#"><img src="img/partner4.png" class="partner-img" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-4 col-md-3">
+                                            <div class="card type-course-border">
+                                                <div class="card-body partner-card">
+                                                    <a href="#"><img src="img/partner5.png" class="partner-img" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3">
+                                            <div class="card type-course-border">
+                                                <div class="card-body partner-card">
+                                                    <a href="#"><img src="img/partner6.png" class="partner-img" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3">
+                                            <div class="card type-course-border">
+                                                <div class="card-body partner-card">
+                                                    <a href="#"><img src="img/partner7.png" class="partner-img" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3">
+                                            <div class="card type-course-border">
+                                                <div class="card-body partner-card">
+                                                    <a href="#"><img src="img/partner8.png" class="partner-img" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-3 py-lg-5" style="background-color: #005A9C">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0 d-flex flex-column h-100">
+                    <a href="#"><img src="img/bmtilogo.png" alt="Logo" class="img-fluid mb-3" style="max-height: 80px; width: 120px;"></a>
+                    <div class="d-flex gap-3 mt-auto">
+                        <a href="#"><i class="bi bi-facebook fs-4 text-white"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-4 text-white"></i></a>
+                        <a href="#"><i class="bi bi-twitter fs-4 text-white"></i></a>
+                        <a href="#"><i class="bi bi-youtube fs-4 text-white"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0 d-flex flex-column h-100">
+                    <h4 class="py-3">Important Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="text-decoration: none; color: white">&gt; All Courses</a></li>
+                        <li><a href="#" style="text-decoration: none; color: white">&gt; Upcoming Events</a></li>
+                        <li><a href="#" style="text-decoration: none; color: white">&gt; About BITM</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0 d-flex flex-column h-100">
+                    <h4 class="py-3">Office Address</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>BDBL Bhaban (Level-3, East), 12 Karwan Bazar, Dhaka-1215</p>
+                </div>
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0 d-flex flex-column h-100">
+                    <h4 class="py-3">Contact Us</h4>
+                    <p><i class="fa-solid fa-phone text-brandGreen-500" style="color: white;"></i> +88 09638-016499</p>
+                    <p><i class="fa-solid fa-envelope text-brandGreen-500" style="color: white;"></i> info@bitm.org.bd</p>
+                </div>
+                <div class="col-12 text-center">
+                    <img src="img/payemnt.png" alt="" class="img-fluid mx-auto d-block rounded-2" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
